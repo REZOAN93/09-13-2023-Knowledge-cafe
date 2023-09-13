@@ -5,6 +5,7 @@ import { BsFillBookmarkFill } from "react-icons/bs";
 const News = ({ news, handleAddBookMark, handleMarkAsRead }) => {
   const {
     cover,
+    id,
     title,
     author,
     img,
@@ -65,7 +66,7 @@ const News = ({ news, handleAddBookMark, handleMarkAsRead }) => {
           </p>
 
           <div className="card-actions">
-            <button className=" text-blue-700 underline hover:cursor-pointer" onClick={() => handleMarkAsRead(reading_time)}>Mark as read</button>
+            <button className=" text-blue-700 underline hover:cursor-pointer" onClick={() => handleMarkAsRead(id,reading_time)}>Mark as read</button>
           </div>
         </div>
       </div>

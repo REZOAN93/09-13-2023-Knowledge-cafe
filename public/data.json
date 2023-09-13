@@ -7,7 +7,7 @@
     "author_img": "https://i.ibb.co/9nf5yzD/author-1.jpg",
     "img": "https://i.ibb.co/pr168yH/a.jpg",
     "posted_date": "Mar 14,2023 (4 Days ago)",
-    "reading_time": "12",
+    "reading_time": 12,
     "hashtags": ["Leadership", "Management", "Success"]
   },
   {
@@ -18,7 +18,7 @@
     "author_img": "https://i.ibb.co/DYHkxyY/author-1.jpg",
     "img": "https://i.ibb.co/0XcrLKG/b.jpg",
     "posted_date": "Mar 14,2023 (2 Days ago)",
-    "reading_time": "8",
+    "reading_time": 8,
     "hashtags": ["TimeManagement", "Productivity", "WorkLifeBalance"]
   },
   {
@@ -29,7 +29,7 @@
     "author_img": "https://i.ibb.co/d0y6j8P/author-1.png",
     "img": "https://i.ibb.co/T8q87LT/C.jpg",
     "posted_date": "Mar 14,2023 (23 Days ago)",
-    "reading_time": "15",
+    "reading_time": 54,
     "hashtags": ["MachineLearning", "AI", "DataScience"]
   },
   {
@@ -40,7 +40,7 @@
     "author_img": "https://i.ibb.co/3sXCCZn/author-2.jpg",
     "img": "https://i.ibb.co/g3RDVYL/D.png",
     "posted_date": "Mar 14,2023 (32 Days ago)",
-    "reading_time": "10",
+    "reading_time": 84,
     "hashtags": ["Finance", "Investing", "Budgeting"]
   },
   {
@@ -51,7 +51,7 @@
     "author_img": "https://i.ibb.co/KN5ph09/Sadiaa-Khateeb.webp",
     "img": "https://i.ibb.co/3z01v1C/E.png",
     "posted_date": "Mar 14,2023 (10 Days ago)",
-    "reading_time": "9",
+    "reading_time": 14,
     "hashtags": ["Communication", "SoftSkills", "Leadership"]
   },
   {
@@ -62,7 +62,7 @@
     "author_img": "https://i.ibb.co/Rb46N5Z/author-2.jpg",
     "img": "https://i.ibb.co/zxnwzbq/F.png",
     "posted_date": "Mar 14,2023 (8 Days ago)",
-    "reading_time": "9",
+    "reading_time": 2,
     "hashtags": ["Communication", "SoftSkills", "Leadership", "Shawon"]
   }
 ]

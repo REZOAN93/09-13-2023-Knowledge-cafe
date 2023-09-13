@@ -4,9 +4,11 @@ import { useState } from "react";
 import BookMark from "./BookMark";
 import News from "./News";
 
-const Knowledge = ({handleMarkAsRead}) => {
+const Knowledge = () => {
+  const [readingTime,setReadingTime]=useState(0)
   const [news, setNews] = useState([]);
   const [bookmarks, setBookMarks] = useState([]);
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -17,6 +19,17 @@ const Knowledge = ({handleMarkAsRead}) => {
     const newMarks = [...bookmarks, data];
     setBookMarks(newMarks);
   };
+
+  const handleMarkAsRead=(id,time)=>{
+    const readingTimes=readingTime+time
+    setReadingTime(readingTimes)
+  
+    // remove bookmark
+    const remaingBookmarks=bookmarks.filter(na=>na.id!==id)
+    setBookMarks(remaingBookmarks)
+  }
+
+
   return (
     <div>
       <div className=" flex mt-4">
@@ -34,7 +47,7 @@ const Knowledge = ({handleMarkAsRead}) => {
           <div className="pl-10">
             <div className="bg-blue-100 rounded-lg">
               <p className="p-5 text-2xl font-bold text-blue-800">
-                Spent time on read : {bookmarks.length}
+                Spent time on read : {readingTime}
               </p>
             </div>
             <div className="bg-gray-300 my-5 rounded-lg pb-5">
@@ -44,8 +57,8 @@ const Knowledge = ({handleMarkAsRead}) => {
                 </p>
               </div>
               <div>
-                {bookmarks.map((na) => (
-                  <BookMark mark={na}></BookMark>
+                {bookmarks.map((na,index) => (
+                  <BookMark key={index} mark={na}></BookMark>
                 ))}
               </div>
             </div>
